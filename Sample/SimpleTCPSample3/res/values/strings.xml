@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">SimpleTCPSample3</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_client">Client</string>
-    <string name="title_activity_server">Server</string>
-
-</resources>
