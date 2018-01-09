@@ -45,14 +45,14 @@ public class SimpleTcp1Activity extends AppCompatActivity {
                     SimpleTcpClient.send(message, ip, TCP_PORT);
 
                     // Send message and waiting for callback
-                    /*SimpleTCPClient.send(message, ip, TCP_PORT, new SendCallback() {
-                        public void onSuccess(String tag) {
-							Toast.makeText(getApplicationContext(), "onSuccess", Toast.LENGTH_SHORT).show();
-						}
-						public void onFailed(String tag) {
-							Toast.makeText(getApplicationContext(), "onFailed", Toast.LENGTH_SHORT).show();
-						}
-					}, "TAG");*/
+//                    SimpleTcpClient.send(message, ip, TCP_PORT, new SimpleTcpClient.SendCallback() {
+//                        public void onSuccess(String tag) {
+//							Toast.makeText(getApplicationContext(), "onSuccess", Toast.LENGTH_SHORT).show();
+//						}
+//						public void onFailed(String tag) {
+//							Toast.makeText(getApplicationContext(), "onFailed", Toast.LENGTH_SHORT).show();
+//						}
+//					}, "TAG");
                 }
             }
         });
