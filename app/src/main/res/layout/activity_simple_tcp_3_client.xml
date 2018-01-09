@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleTcp3ClientActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italic"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radioBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Black Color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red Color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Color"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue Color"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextIpAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:ems="8"
+        android:hint="Target IP Address"
+        android:text="192.168.1.1"
+        android:textSize="16sp"></EditText>
+
+    <Button
+        android:id="@+id/buttonRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Refresh"
+        android:textSize="14sp" />
+
+</RelativeLayout>
